@@ -8,6 +8,8 @@
 
 
 import React, { Component } from 'react';
+// Container is a normal React Component,
+// but it is bound to the application state
 import { connect } from 'react-redux'
 
 class BookList extends Component {
@@ -29,6 +31,8 @@ class BookList extends Component {
   }
 }
 
+
+// Transforming BookList into a Container
 function mapStateToProps(state) {
   // Whatever object is returned will show up as props
   // inside of BookList
